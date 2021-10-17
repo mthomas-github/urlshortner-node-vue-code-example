@@ -1,0 +1,6 @@
+{
+    "Database": {
+        "mongoURI": "mongodb+srv://server-user:rhchuUmMPi1ZYtQF@cluster0.xvgge.mongodb.net/urlShortener?retryWrites=true&w=majority",
+        "baseURL": "http://localhost:8000"
+    }
+}

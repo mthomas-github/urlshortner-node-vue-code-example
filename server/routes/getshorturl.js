@@ -6,8 +6,9 @@ const getShortUrlRoute = express.Router();
 
 getShortUrlRoute.get('/:shortUrl', async (req, res) => {
     const shortUrlCode = req.params.shortUrl;
-    const url = await Url.findOne({ urlCode: shortUrlCode });
-
+    console.log(shortUrlCode);
+    const url = await Url.findOne({ shortUrlId: shortUrlCode });
+    console.log(url);
     try {
         if (url) {
             return res.redirect(url.longUrl);

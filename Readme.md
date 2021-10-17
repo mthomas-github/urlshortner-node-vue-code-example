@@ -18,7 +18,7 @@ URL Shortner using Node.js, Express, MongoDB, Vue.JS
 7. mongoose
 8. vue
 
-#Boilerplate
+# Boilerplate
 BootStrap in Index.html
 NavBar in App.Vue
 

@@ -38,6 +38,9 @@
 
 <script>
 import axios from "axios";
+import Vue from "vue";
+import Toasted from "vue-toasted";
+Vue.use(Toasted);
 export default {
   data: () => {
     return {
@@ -55,7 +58,12 @@ export default {
         console.log(response);
         this.shortUrl = response.data.shortUrl;
       } catch (error) {
-        console.log(error);
+        if (error.response && error.response.status === 400) {
+          this.$toasted.error(error.response.data.message, { duration: 5000 });
+          console.log(error.response.data.message);
+        }
+        //this.$toasted.error(error, { duration: 5000 });
+        //console.log(error);
       }
     },
   },

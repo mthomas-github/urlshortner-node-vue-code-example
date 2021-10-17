@@ -40,7 +40,7 @@ shortUrlRoute.post("/", async (req, res) => {
             return res.status(500).json("Internal Server error " + err.message);
         }
     } else {
-        res.status(400).json("Invalid URL. Please valid url.");
+        res.status(400).json({ message: 'Invalid URL. Try Again. Ex(https://www.google.com)' });
     }
 });
 

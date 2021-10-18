@@ -3,10 +3,11 @@
 URL Shortner using Node.js, Express, MongoDB, Vue.JS
 
 # How To Run
-
-1. Use following command to run project `cd client && yarn start`
-2. Insert a valid URL (ex: https://www.google.com).
-3. Click on Result to be redirected.
+1. cd server && npm i
+2. cd ../client && yarn install
+3. Use following command to run project `yarn start`
+4. Insert a valid URL (ex: https://www.google.com).
+5. Click on Result to be redirected.
 
 # Libraries
 1. Axios
